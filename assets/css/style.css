@@ -133,7 +133,7 @@ header .image img {
   width: 400px;
   height: 400px;
   margin: auto;
-  margin-top: -220px;
+  margin-top: -100px;
   margin-bottom: 80px;
 }
 
@@ -297,7 +297,7 @@ header .image img {
 }
 
 .curriculum .container .content .secundary-button {
-  width: 50vh;
+  width: 40vh;
   height: 70px;
   background-color:var(--medium-grey);
   border: 2px solid var(--light-blue);
@@ -460,28 +460,11 @@ header .image img {
     padding: 40px 60px;
   }
 
-  /* menu --------------------------- */
-  nav {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    top: unset;
-    padding: 0 15px;
-  }
-
-  nav ul a {
-    font-size: 12px;
-  }
-
-  nav ul a svg {
-    display: block;
-    margin: 0 auto 10px;
-  }
-
   /* sobre mim --------------------------- */
   .about-me {
     font-size: 20px;
     margin-bottom: 20px;
+    padding: 0%;
   }
 
   .about-me img{
@@ -491,6 +474,10 @@ header .image img {
     margin-bottom: 30px;
   }
 
+  .about-me p {
+    padding: 0 40px;
+  }
+
 
   .gosto-de-fazer {
     margin: 70px 0;
@@ -498,7 +485,7 @@ header .image img {
 
   .gosto-de-fazer .services-container,
   .portfolio-container {
-    padding: 0 20px;
+    padding: 0 50px;
   }
 
   .portfolio .portfolio-container {
@@ -510,10 +497,14 @@ header .image img {
   }
 
   .curriculum {
-      padding: 0 20px;
+      padding: 0 50px;
   }
 
   .curriculum .container .container .curriculum-info {
       padding: 0 30px;
+  }
+
+  .curriculum .container .container .content .secundary-button {
+    width: 80px;
   }
 }
