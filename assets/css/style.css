@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* configuration ------------------------------------------ */
+
+:root {
+  --light-blue: #0DCCFF;
+  --dark-blue: #4760FF;
+  --bg-dark: #151515;
+  --white: #ffffff;
+  --medium-grey: #2D2D2D;
+
+  --menu-height: 65px;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0dcbff00;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-blue);
+  border-radius: 4px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bg-dark);
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* header ------------------------------------------ */
+
+header {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--medium-grey);
+    height: fit-content;
+    padding: 100px;
+
+    font-family: 'Lato', sans-serif;
+}
+
+header .container h1 {
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: var(--light-blue);
+}
+
+header .container h2 {
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+header .container p {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+header .container p svg {
+    margin-right: 15px;
+    position: relative;
+}
+
+header .container p span {
+  color: var(--light-blue);
+}
+
+header .image a {
+  color: #fff;
+}
+
+header .image a svg {
+  float: right;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+header .image a svg:hover {
+  color: var(--dark-blue);
+}
+
+header .image img {
+    float: right;
+    margin-bottom: -15vh;
+    margin-top: 10vh;
+    width: 60vh;
+    height: 60vh;
+}
+
+/* about-me */
+
+.about-me {
+  padding: 100px 440px;
+  font-family: 'Lato', sans-serif;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 142%;
+}
+
+.about-me img {
+  display: none;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  margin-top: -220px;
+  margin-bottom: 80px;
+}
+
+.about-me a {
+  color: var(--light-blue);
+}
+
+/* O que gosto de fazer */
+.gosto-de-fazer {
+  background: linear-gradient(180deg, #2D2D2D 0%, #151515 100%);
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.gosto-de-fazer .line {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #0DCCFF 0%, #4760FF 100%););
+}
+
+.gosto-de-fazer h1 {
+  margin-top: 50px;
+  font-size: 2.5em;
+}
+
+.services-container,
+.portfolio-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 60px auto 0;
+
+}
+
+.gosto-de-fazer .services-container .service-card {
+  max-width: 360px;
+  background: #2f3034;
+  border: 2px solid var(--light-blue);
+  border-radius: 16px;
+  padding: 40px 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.gosto-de-fazer .services-container .service-card img {
+  margin-bottom: 40px;
+  width: 90px;
+}
+
+.service-card + .service-card {
+  margin-left: 10px;
+}
+
+/* Portfólio */
+.portfolio {
+  padding: 0 100px;
+  /* margin-bottom: 10px; */
+  text-align: center;
+  height: 800px;
+}
+
+.portfolio h1 {
+  font-size: 3em;
+}
+
+.portfolio a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.portfolio .portfolio-container {
+  margin-top: 80px;
+}
+
+.portfolio .portfolio-container .portfolio-card {
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(255, 255, 255, 0.33) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(42px);
+  border: 2px solid var(--light-blue);
+
+  border-radius: 16px;
+  max-width: 360px;
+  text-align: left;
+  padding: 50px 25px;
+}
+
+.portfolio .portfolio-container .portfolio-card .img-container {
+  margin: 0px 25px 50px;
+  position: relative;
+}
+
+.portfolio .portfolio-container .portfolio-card .img-container img {
+  width: 100%;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container {
+  margin-bottom: 20px;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul li {
+  color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+  border-radius: 16px;
+  padding: 3px 15px;
+}
+
+.portfolio-card .language-container ul li + li {
+  margin-left: 10px;
+}
+
+.portfolio-card + .portfolio-card {
+  margin-left: 10px;
+}
+
+/* Curriculum */
+.curriculum {
+  padding: 0 100px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.curriculum h1 {
+  font-size: 3em;
+
+}
+
+.curriculum .container {
+  display: flex;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.curriculum .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+
+.curriculum .container .content .curriculum-info {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-gap: 1rem;
+  margin-bottom: 50px;
+}
+
+.curriculum .container .content .secundary-button {
+  width: 50vh;
+  height: 70px;
+  background-color:var(--medium-grey);
+  border: 2px solid var(--light-blue);
+  border-radius: 20px;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--light-blue);
+  cursor: pointer;
+}
+
+.curriculum .container .content .secundary-button:hover {
+  background-color: var(--dark-blue);
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: var(--medium-grey);
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer .line {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #0DCCFF 0%, #4760FF 100%););
+}
+
+.footer .container h3{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+.footer .container h5{
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+
+.footer .container p {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer .container a {
+  margin-right: 10px;
+}
+
+/* Responsive ------------------------------------------ */
+
+/* small desktop --------------------------- */
+@media (max-width: 1200px) {
+  /* header */
+  header .container {
+    width: 100%;
+  }
+
+  header .image {
+    padding-right: 0;
+    display: block;
+  }
+
+  /* sobre mim --------------------------- */
+  .about-me {
+    flex-direction: column;
+    padding: 100px 100px;
+  }
+
+  .about-me .container,
+  .about-me {
+    width: 100%;
+  }
+
+  .about-me .container {
+    padding-right: 0;
+  }
+
+  .about-me {
+    margin: 70px 0;
+  }
+
+  .gosto-de-fazer .services-container,
+  .portfolio .portfolio-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    height: 400px;
+  }
+
+  .gosto-de-fazer,
+  .portfolio {
+    padding: 0px;
+    margin-bottom: 50px;
+  }
+
+  .service-card, .portfolio-card {
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .portfolio {
+    height: 100%;
+  }
+
+  .curriculum .container {
+      flex-wrap: wrap;
+  }
+
+  .curriculum .container .curriculum-img {
+      display: block;
+      margin: 0 auto 50px;
+      width: 100%;
+      max-width: 520px;
+  }
+
+}
+
+/* tablet ----------------------------------------- */
+@media (max-width: 767px) {
+  /* header --------------------------- */
+  header {
+    display: inline-block;
+    /* padding: 0; */
+  }
+
+  header .container{
+    /* padding: 100px; */
+  }
+
+  header .image a {
+    display: none;
+  }
+
+  header .image img {
+    display: none;
+  }
+
+  .about-me img {
+    display: block;
+  }
+
+}
+
+/* celular ------------------------------------------- */
+@media (max-width: 480px) {
+  /* header --------------------------- */
+  header .container {
+    padding: 0 40px;
+  }
+
+  /* menu --------------------------- */
+  nav {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    top: unset;
+    padding: 0 15px;
+  }
+
+  nav ul a {
+    font-size: 12px;
+  }
+
+  nav ul a svg {
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  /* sobre mim --------------------------- */
+  .about-me {
+    font-size: 20px;
+  }
+
+  .about-me img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+
+  .gosto-de-fazer {
+    margin: 70px 0;
+  }
+
+  .gosto-de-fazer .services-container,
+  .portfolio-container {
+    padding: 0 20px;
+  }
+
+  .portfolio .portfolio-container {
+    margin-top: 70px;
+  }
+
+  .portfolio {
+    margin: 100px 0 50px;
+  }
+
+  .curriculum {
+      padding: 0 20px;
+  }
+
+  .curriculum .container .container .curriculum-info {
+      padding: 0 30px;
+  }
+}
