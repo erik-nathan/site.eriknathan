@@ -57,13 +57,17 @@ header {
     height: 70vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--medium-grey);
     height: fit-content;
     padding: 100px;
+    margin: auto;
 
     font-family: 'Lato', sans-serif;
+}
+
+header .container {
+  max-width: 100vh;
+  margin: auto;
 }
 
 header .container h1 {
@@ -110,7 +114,7 @@ header .image a svg:hover {
 
 header .image img {
     float: right;
-    margin-bottom: -15vh;
+    margin-bottom: -21vh;
     margin-top: 10vh;
     width: 60vh;
     height: 60vh;
@@ -133,8 +137,34 @@ header .image img {
   width: 400px;
   height: 400px;
   margin: auto;
-  margin-top: -100px;
+  margin-top: -130px;
   margin-bottom: 80px;
+}
+
+.about-me .education {
+  display: none;
+  margin-bottom: 30px;
+}
+
+.about-me .education .traçado {
+  max-width: 100%;
+  height: 8px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.about-me .education p:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+.about-me .education p svg{
+  margin-right: 15px;
+}
+
+.about-me .education p span {
+  color: var(--light-blue);
+
 }
 
 .about-me a {
@@ -435,8 +465,13 @@ header .image img {
     /* padding: 0; */
   }
 
-  header .container{
-    /* padding: 100px; */
+  header p {
+    display: none;
+  }
+
+  header .container h1, h2 {
+    text-align: center;
+    font-size: 2.5em;
   }
 
   header .image a {
@@ -449,6 +484,15 @@ header .image img {
 
   .about-me img {
     display: block;
+    margin-top: -270px;
+  }
+
+  .about-me .education {
+    display: block;
+  }
+
+  .gosto-de-fazer .services-container .service-card h2 {
+    font-size: 1.5em;
   }
 
 }
@@ -458,6 +502,10 @@ header .image img {
   /* header --------------------------- */
   header {
     padding: 40px 60px;
+  }
+
+  header .container h1 {
+    font-size: 2.3em;
   }
 
   /* sobre mim --------------------------- */
@@ -470,6 +518,7 @@ header .image img {
   .about-me img{
     width: 300px;
     height: 300px;
+    margin-top: -130px;
     justify-content: center;
     margin-bottom: 30px;
   }
@@ -478,6 +527,9 @@ header .image img {
     padding: 0 40px;
   }
 
+  .about-me .education .traçado {
+    width: 80%;
+  }
 
   .gosto-de-fazer {
     margin: 70px 0;
