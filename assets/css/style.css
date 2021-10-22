@@ -287,9 +287,9 @@ header .image img {
   margin-left: 10px;
 }
 
-.portfolio-card + .portfolio-card {
+/* .portfolio-card + .portfolio-card {
   margin-left: 10px;
-}
+} */
 
 /* Curriculum */
 .curriculum {
@@ -545,12 +545,12 @@ header .image img {
     padding: 0 50px;
   }
 
-  .portfolio .portfolio-container {
-    margin-top: 70px;
-  }
-
   .portfolio {
     margin: 100px 0 50px;
+  }
+
+  .portfolio .portfolio-container {
+    margin-top: 70px;
   }
 
   .curriculum {
