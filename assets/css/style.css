@@ -217,10 +217,6 @@ header .image img {
   width: 90px;
 }
 
-.service-card + .service-card {
-  margin-left: 10px;
-}
-
 /* Portfólio */
 .portfolio {
   padding: 0 100px;
@@ -286,10 +282,6 @@ header .image img {
 .portfolio-card .language-container ul li + li {
   margin-left: 10px;
 }
-
-/* .portfolio-card + .portfolio-card {
-  margin-left: 10px;
-} */
 
 /* Curriculum */
 .curriculum {
